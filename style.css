@@ -1,0 +1,319 @@
+html{
+    box-sizing: border-box;
+    overflow-x: hidden /*Elemente, die den Viewport sprengen würden, ragen nach außen*/
+}
+
+h1 a {
+    font-size: 60px;
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+li{
+    list-style: none;
+
+}
+
+h1{
+    text-align: center;
+    padding: 20px 0 30px;
+    margin: 0;
+    background-color: #313E50;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+h4{
+    font-size: 20px;
+}
+
+#targetElement > *{
+    padding: unset;
+    padding: 0 30px;
+}
+
+#targetElement{
+    padding-top: 30px;
+    /*width: 100vh; */
+    margin: auto;
+    max-width: 1700px;
+}
+
+#border1{
+    margin-bottom: 30px;
+    height: 3px;
+    background-color: #313E50;
+} 
+
+#border2{
+    width: 100vh;
+}
+
+#border3{
+    height: 3px;
+    background-color: #313E50;
+}
+
+.form-control{
+    padding: px;
+    border-color: #313E50;
+    border-radius: 0 10px 10px 0;
+    margin-right: 20px;
+}
+
+.input-group-text{
+    background-color: #313E50;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    border-color: #313E50;
+    margin-left: 20px;
+    width: 88px;
+    text-align: center;
+    justify-content: center; /*wegen display: flex*/
+}
+
+/*
+.form-control:focus {
+    border-color: red;
+    box-shadow: box-shadow(inset 0 1px 1px red, 0 0 4px red);
+    
+}
+*/
+
+.form-control:focus {
+    box-shadow:  2.5px 1.5px 1px 1px #F05D5E;
+    border-color: unset;
+}
+
+.btn{
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: #F05D5E;
+    border: 0;
+}
+
+.btn:hover, .btn:focus:hover{
+    background-color: white;
+    /* border: #F05D5E solid 3px; */
+    box-shadow:0px 0px 0px 3px #F05D5E inset; /*"Border" nach innen, statt nach außen*/
+    color: #F05D5E;
+}
+
+.btn:focus {
+    border-radius: 15px;
+    box-shadow: unset;
+    background-color: #f05d5d;
+    /* border: solid #313E50 3px; */
+    box-shadow:0px 0px 0px 3px #313E50 inset;
+}
+
+.btn:active{
+    box-shadow: 5px 5px purple;
+    /* transition: #f05d5d .15s ease-in-out,background-color #f05d5d .15s ease-in-out,border-color #f05d5d .15s ease-in-out,box-shadow #f05d5d .15s ease-in-out; */
+    transition: none;
+}
+
+.configurator ol{
+    padding: 0px 10px 20px;
+    margin-bottom: 0px;
+}
+
+#steps{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+#steps li{
+    font-size: 16px;
+}
+
+.configurator h2{
+    text-align: center;
+}
+
+.count{
+    padding: 10px 30px;
+}
+
+.players{
+    padding: 10px 30px;
+}
+
+.lineup{
+    text-align: center;
+}
+
+
+
+
+
+.team1, .team2{
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.versus{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#vs{
+    margin-bottom: 0px;
+    color: #313E50;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.registeredPlayers{
+    text-align: center;
+    border:#313E50 solid;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+.registeredPlayers h4{
+    margin-top: 10px;
+}
+
+.registeredPlayers p{
+    margin-bottom: 0;
+}
+
+.registeredPlayers p:last-of-type{ /*mit jedem hinzugefügten Element ändert sich auch das letzte*/
+    margin-bottom: 10px;
+}
+
+.team1-and-team2{
+    margin: auto;
+    padding: 30px 30px 0 30px;
+}
+
+.team1, .team2{
+    color: #313E50;
+    border:#F05D5E solid;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+
+/*
+.team-configurator{
+    width: 80%;
+    margin: auto;
+}
+*/
+
+#playerCountButtons{
+    /* width: 70%; */
+    margin: auto;
+    
+}
+
+[id="5v5Btn"], [id="6v6Btn"]{
+    margin: 0 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+
+
+#create-btn{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#create-btn button{
+    font-size: 25px;
+}
+
+#create-btn p{
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.invalid-feedback{
+    font-size: 16px;
+    color: red;
+    display: block;
+    margin-top: -2px; /*dichter nach oben ans Textfeld*/
+}
+
+
+/*Unten*/
+
+footer p span:first-of-type{
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+footer p span:last-of-type{
+    font-size: 14px;
+    vertical-align: top;
+}
+
+#impressum{
+    text-align: center;
+    font-size: 16px;
+    padding: 12px;
+}
+
+
+@media (max-width: 768px) { /*Viewport kleiner als md*/
+    
+    html{
+        box-sizing: border-box;
+        overflow-x: hidden /*Elemente, die den Viewport sprengen würden, ragen nach außen*/
+    }
+    
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    h1{
+        padding-top: 15px;
+    }
+
+    h1 a{
+        font-size: 45px;
+    }
+
+    .team-lineup{
+        /*border-top: solid black;*/
+        padding-top: 40px;
+        /* width: 90%; */
+        margin: auto;
+    }
+
+    .team-configurator{ 
+        border-top: #313E50 3px solid;
+        padding-top: 40px !important; /*sonst wird Regel von #targetElement überschrieben*/
+        
+    }
+
+    #border1, #border2, #border3{
+        height: 3px;
+        background-color: #313E50;
+    }
+
+    .team1-and-team2{
+        padding: 10% 20px;
+    }
+
+    .team1, .team2{
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+}
