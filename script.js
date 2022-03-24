@@ -98,3 +98,4 @@ var app = Vue.createApp({
     }
 }).mount('#targetElement'); //Verknüpfung mit dem HTML-Element
 //zusätzlicher Kommentar
+//noch einer
