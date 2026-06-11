@@ -1,3 +1,1 @@
-- 👋 Hi, I’m @memoKrg
-- 👀 I’m interested in Java and Selenium
-- 🌱 I’m currently learning Java
+Hello there!
